@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('GiucondaRegular-vmJK4.otf');
+}
+*{
+    -fx-font-family: 'RobotoMono';
+}
+.txt {
+    -fx-background-color: #000428;
+    -fx-text-fill: #F2F3F4;
+    /* #2E4053 */
+}
+.txt:focused {
+   /* -fx-background-color: #641E16; */
+    -fx-background-color: #004e92;
+    -fx-text-fill: #ffffff;
+}
+.btn{
+	-fx-background-color:  #E67E22/*#434343/*#000428*/;
+	-fx-text-fill:#ffffff;
+}
+.btn:hover{
+	-fx-background-color: #434343/*#C0392B*/;
+	-fx-text-fill: #ffffff;
+       /* -fx-scale-y: 1;
+        -fx-scale-x: 1;*/
+}
+ .btn:pressed {
+        -fx-scale-y: 0.97;
+        -fx-scale-x: 0.97;
+       /* -fx-text-fill:#000000;*/
+        -fx-background-color: black;
+}
+.btn1{
+	-fx-background-color: #FF8E00/*#434343 /*#000428*/;
+	-fx-text-fill:#ffffff;
+}
+.btn1:hover{
+	-fx-background-color: #E67E22/*#C0392B*/;
+	-fx-text-fill: #ffffff;
+       /* -fx-scale-y: 1;
+        -fx-scale-x: 1;*/
+}
+.btn1:pressed {
+        -fx-scale-y: 0.97;
+        -fx-scale-x: 0.97;
+       /* -fx-text-fill:#000000;*/
+        -fx-background-color: #E67E22;
+}
+.btn2{
+        -fx-background-radius: 2px;
+	-fx-background-color:   #004e92/*#434343/*#000428*/;
+	-fx-text-fill:#ffffff;
+        -fx-border-width: 1px;
+        -fx-border-radius:2px;
+        -fx-border-color: #2c5364;
+            /* linear-gradient(to right, #0f2027, #203a43, #2c5364);*/
+}
+.btn2:hover{
+	-fx-background-color: #203a43/*#C0392B*/;
+	-fx-text-fill: #ffffff;
+       /* -fx-scale-y: 1;
+        -fx-scale-x: 1;*/
+}
+ .btn2:pressed {
+        -fx-scale-y: 0.97;
+        -fx-scale-x: 0.97;
+       /* -fx-text-fill:#000000;*/
+        -fx-background-color: black;
+}
+.pn1 {
+    -fx-background-color: #E5E8E8
+    
+}	
+.linear-grad2{
+   -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #17202A, #641E16);
+   	-fx-text-fill:#ffffff;
+
+}
+.linear-grad1{
+   -fx-background-color: linear-gradient(from 25px 25px to 100px 100px, #17202A, #641E16);
+}
+.linear-grad-to-bottom-right{
+    -fx-background-color: linear-gradient(to bottom right, #641E16, #17202A);
+}
+.linear-grad-to-top-left{
+    -fx-background-color: linear-gradient(to top left, #17202A, #641E16);
+}
+.linear-grad-to-right{
+    -fx-background-color: linear-gradient(to right,  #76D7C4, #117864,#0B5345);
+}
+.lab{
+    -fx-text-fill: linear-gradient(from 25px 25px to 100px 100px, #D6DBDF, #34495E);
+}
+.linear-grad22{
+    -fx-background-color: #0f2027; /* fallback for old browsers */
+   /* Chrome 10-25, Safari 5.1-6 */
+  -fx-background-color: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+   
+}
+.linear-grad23{
+    -fx-background-color:  #000428;; /* fallback for old browsers */
+   /* Chrome 10-25, Safari 5.1-6 */
+  -fx-background-color: linear-gradient(to bottom, #000428, #004e92); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+}
+.txt-grad{
+    -fx-text-fill: linear-gradient(to left,  #17202A, #641E16);
+}
+.linear-grad-to-bottom{
+    -fx-background-color: linear-gradient(to bottom,#FDF2E9,#FEF5E7, #FEF5E7,#F8F9F9, #ffffff);
+    -fx-background-radius: 10px;
+    -fx-border-width: 0px;
+    -fx-border-color: #E67E22;
+    -fx-border-radius: 10px;
+}
+.inside-pane-background{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10px;
+    -fx-border-width: 0px;
+    -fx-border-color: #E67E22;
+    -fx-border-radius: 10px;
+}
+.pn2{ -fx-background-color: #ffffff;
+     -fx-background-radius: 10px;
+}
+.Down-border{
+   -fx-background-color: #000000;
+    -fx-background-color: linear-gradient(to right, #434343 0%, black 100%);
+    /*-fx-background-color:#ECF0F1;*/
+}

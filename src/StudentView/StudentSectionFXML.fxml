@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="488.0" prefWidth="692.0" styleClass="linear-grad22" stylesheets="@../AdminView/Style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentView.StudentSectionFXMLController">
+   <children>
+      <Pane layoutX="19.0" layoutY="14.0" prefHeight="95.0" prefWidth="654.0">
+         <children>
+            <ImageView fitHeight="76.0" fitWidth="111.0" layoutX="16.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/BlueLogo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="106.0" layoutY="17.0" prefHeight="55.0" prefWidth="302.0" text="MUFIC" textFill="#f4f2f2">
+               <font>
+                  <Font name="System Bold" size="43.0" />
+               </font>
+            </Label>
+            <Label layoutX="183.0" layoutY="69.0" prefHeight="25.0" prefWidth="184.0" text="Courses Registration System" textFill="#f7f4f4">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="BackButton" layoutX="565.0" layoutY="11.0" mnemonicParsing="false" onAction="#handelButtonAction" prefHeight="44.0" prefWidth="75.0" style="-fx-background-color: Orange;" text="Back">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Label layoutX="86.0" layoutY="149.0" prefHeight="51.0" prefWidth="253.0" text="Student Section" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="28.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/student.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="212.0" layoutY="232.0" prefHeight="159.0" prefWidth="254.0" stylesheets="@../AdminView/Style.css">
+         <children>
+            <Button fx:id="EnrollCourseButton" mnemonicParsing="false" onAction="#handelButtonAction" prefHeight="62.0" prefWidth="253.0" styleClass="btn" stylesheets="@../AdminView/Style.css" text="Enroll Courses">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="ViewEnrolledCourseButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handelButtonAction" prefHeight="62.0" prefWidth="250.0" styleClass="btn" stylesheets="@../AdminView/Style.css" text="View Enrolled Courses">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label fx:id="StatusLabel" layoutX="223.0" layoutY="420.0" prefHeight="44.0" prefWidth="238.0" textFill="#efefef">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="StudentTable" prefHeight="658.0" prefWidth="909.0" styleClass="linear-grad23" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminView.ViewStudentInfoFXMLController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="110.0" prefWidth="888.0">
+         <children>
+            <ImageView fitHeight="110.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/BlueLogo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="138.0" layoutY="8.0" prefHeight="94.0" prefWidth="386.0" text="MUFIC" textFill="#fffefe">
+               <font>
+                  <Font name="System Bold" size="61.0" />
+               </font>
+            </Label>
+            <Label layoutX="234.0" layoutY="79.0" prefHeight="23.0" prefWidth="181.0" text="Courses Registration System" textFill="#eae7e7">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="BackButton" layoutX="803.0" layoutY="14.0" mnemonicParsing="false" onAction="#handelButtonAction" prefHeight="36.0" prefWidth="71.0" style="-fx-background-color: Orange;" text="Back">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <TableView fx:id="StudentTabel" layoutX="41.0" layoutY="225.0" prefHeight="426.0" prefWidth="839.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="103.99999845027924" text="Student Id" />
+          <TableColumn fx:id="FullNameCol" prefWidth="156.79993438720703" text="Full Name" />
+            <TableColumn fx:id="EmailCol" prefWidth="140.79998779296875" text="Email" />
+            <TableColumn fx:id="PassCol" prefWidth="123.19998168945312" text="Password" />
+            <TableColumn fx:id="ContactCol" prefWidth="148.800048828125" text="Contact" />
+            <TableColumn fx:id="LevelCol" prefWidth="89.5999755859375" text="Level" />
+            <TableColumn fx:id="GPACOl" prefWidth="71.199951171875" text="GPA" />
+        </columns>
+      </TableView>
+      <TextField fx:id="SearchField" layoutX="97.0" layoutY="178.0" prefHeight="36.0" prefWidth="198.0" promptText="Enter Id To Search">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="SearchButton" layoutX="331.0" layoutY="178.0" mnemonicParsing="false" onAction="#handelButtonAction" prefHeight="36.0" prefWidth="71.0" style="-fx-background-color: Orange;" text="Search">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="36.0" fitWidth="45.0" layoutX="41.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/view.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

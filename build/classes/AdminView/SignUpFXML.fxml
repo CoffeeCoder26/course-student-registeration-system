@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="676.0" prefWidth="680.0" styleClass="linear-grad23" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminView.SignUpFXMLController">
+   <children>
+      <Pane layoutX="10.0" layoutY="10.0" prefHeight="107.0" prefWidth="840.0">
+         <children>
+            <Label layoutX="113.0" layoutY="2.0" prefHeight="104.0" prefWidth="230.0" text="MUFIC" textFill="#fffbfb">
+               <font>
+                  <Font name="System Bold" size="71.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="90.0" fitWidth="129.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/BlueLogo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="233.0" layoutY="85.0" prefHeight="19.0" prefWidth="185.0" text="Courses Registration System" textFill="#fffbfb">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <Pane layoutX="141.0" layoutY="159.0" prefHeight="494.0" prefWidth="398.0" styleClass="inside-pane-background" stylesheets="@Style.css">
+         <children>
+            <Label fx:id="StatusLabel" layoutX="65.0" layoutY="437.0" prefHeight="33.0" prefWidth="240.0" stylesheets="@Style.css">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <Label layoutX="65.0" layoutY="14.0" prefHeight="39.0" prefWidth="201.0" text="Student Registration">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <VBox layoutX="65.0" layoutY="82.0" prefHeight="330.0" prefWidth="240.0">
+               <children>
+                  <TextField fx:id="idField" prefHeight="33.0" prefWidth="254.0" promptText="Enter Id" styleClass="txt" stylesheets="@../pro.css">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="FullNameTxtField" prefHeight="33.0" prefWidth="254.0" promptText="Enter Full Name" styleClass="txt" stylesheets="@../pro.css">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="EmailTxtField" prefHeight="33.0" prefWidth="254.0" promptText="Enter Email" styleClass="txt" stylesheets="@../pro.css">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="PassField" prefHeight="33.0" prefWidth="254.0" promptText="Enter Password" styleClass="txt" stylesheets="@../pro.css">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="ContactField" prefHeight="33.0" prefWidth="254.0" promptText="Contact Number" styleClass="txt" stylesheets="@../pro.css">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <ChoiceBox fx:id="LevelChcBox" prefHeight="26.0" prefWidth="238.0" styleClass="txt" stylesheets="@Style.css">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </ChoiceBox>
+                  <Button fx:id="signupButton" mnemonicParsing="false" onAction="#handelButtonAction" prefHeight="33.0" prefWidth="254.0" styleClass="btn2" stylesheets="@../pro.css" text="Sign Up">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="25.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <ImageView fitHeight="39.0" fitWidth="45.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/regestartion.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
